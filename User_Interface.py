@@ -19,4 +19,4 @@ def get_info ():
     info.append(phone_number)
     description = input('Введите описание: ')
     info.append(description)
-    return 
+    return info

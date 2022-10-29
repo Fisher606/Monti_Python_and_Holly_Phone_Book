@@ -1,15 +1,16 @@
 
-from genericpath import exists
-from pathlib import Path
+
+
+from os.path import exists
 from Create_CSV import creating
-from Write_File import writing_scv
+from Write_File import writing_csv
 from Write_File import writing_txt
 
 
-Path = 'Phonebook.csv'
-valid = exists(Path)
+path = 'Phonebook.csv'
+valid = exists(path)
 if not valid:
     creating()
 
-writing_scv()
+writing_csv()
 writing_txt()
